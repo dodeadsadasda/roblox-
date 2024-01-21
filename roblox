@@ -1,0 +1,16 @@
+local args = {
+    [1] = "Scrap",
+    [2] = "150"
+}
+
+local remotePath = game:GetService("ReplicatedStorage"):WaitForChild("WorldMarket_Remotes"):WaitForChild("RemoteEvent")
+
+while true do
+    remotePath:FireServer(unpack(args))
+    wait(0.1)
+end
+local args = {
+    [1] = "Use",
+    [2] = "NewYearBox",
+    [3] = "10000"
+}
